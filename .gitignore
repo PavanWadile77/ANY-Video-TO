@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production build artifacts
+dist/
+dist-ssr/
+client/dist/
+server/dist/
+functions/lib/
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment files and credentials (CRITICAL: Never commit secrets)
+.env
+.env.*
+.env*.local
+!.env.example
+
+# Credentials, keys & secrets
+*.pem
+*.key
+*.cert
+*-service-account*.json
+service-account*.json
+serviceAccountKey*.json
+*credentials*.json
+
+# Temporary uploads, database runtime files, and generated user media
+server/uploads/*
+!server/uploads/.gitkeep
+server/data/*.json
+!server/data/.gitkeep
+
+# Firebase debug and cache
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*

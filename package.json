@@ -1,0 +1,21 @@
+{
+  "name": "animora-ai-platform",
+  "version": "1.0.0",
+  "description": "Animora AI - Production AI Animation & Video Generation Platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"API,WEB\" -c \"cyan,magenta\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build && npm --prefix server run build && npm --prefix functions run build",
+    "test": "npm --prefix server run test",
+    "emulators": "firebase emulators:start",
+    "deploy:firestore": "firebase deploy --only firestore",
+    "deploy:storage": "firebase deploy --only storage",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:hosting": "npm --prefix client run build && firebase deploy --only hosting",
+    "deploy:all": "npm run build && firebase deploy",
+    "install:all": "npm install && npm --prefix client install && npm --prefix server install && npm --prefix functions install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
