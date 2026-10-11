@@ -1,5 +1,12 @@
 # ANY Video TO (Animora AI)
 
+<div align="center">
+
+<img src="https://hits.sh/github.com/PavanWadile77/ANY-Video-TO.svg?style=for-the-badge&label=REPOSITORY%20VIEWS&color=2563eb" alt="Repository views" />
+
+</div>
+
+
 > **Animora AI** is a full-stack, enterprise-grade AI animation and video generation platform featuring **Firebase Authentication**, **Supabase Private Media Storage**, and multi-provider AI video synthesis pipelines.
 > Live Hosting: [https://any-video-to.web.app](https://any-video-to.web.app)
 
